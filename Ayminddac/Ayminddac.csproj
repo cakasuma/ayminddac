@@ -65,7 +65,23 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Authenticate.aspx" />
+    <Content Include="Forgot_Password.aspx" />
     <Content Include="packages.config" />
+    <Content Include="css\fonts\font-awesome\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="css\fonts\font-awesome\fonts\fontawesome-webfonte0a5.eot" />
+    <Content Include="css\fonts\font-awesome\fonts\fontawesome-webfonte0a5.ttf" />
+    <Content Include="css\fonts\font-awesome\fonts\fontawesome-webfonte0a5.woff" />
+    <Content Include="css\fonts\font-awesome\fonts\fontawesome-webfonte0a5.woff2" />
+    <Content Include="css\revolution-slider\font\revicons90c6.eot" />
+    <Content Include="css\revolution-slider\font\revicons90c6.ttf" />
+    <Content Include="css\revolution-slider\font\revicons90c6.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="Default.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -74,9 +90,269 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\animations.css" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\colors\green.css" />
+    <Content Include="css\coming-soon.css" />
+    <Content Include="css\fonts\font-awesome\css\font-awesome.css" />
+    <Content Include="css\fonts\font-awesome\fonts\fontawesome-webfonte0a5.svg" />
+    <Content Include="css\images\controls.html" />
+    <Content Include="css\jquery.bxslider.css" />
+    <Content Include="css\nivo-slider.css" />
+    <Content Include="css\prettyPhoto.css" />
+    <Content Include="css\revolution-slider\assets\arrowleft.png" />
+    <Content Include="css\revolution-slider\assets\arrowright.png" />
+    <Content Include="css\revolution-slider\assets\arrow_left.png" />
+    <Content Include="css\revolution-slider\assets\arrow_left2.png" />
+    <Content Include="css\revolution-slider\assets\arrow_right.png" />
+    <Content Include="css\revolution-slider\assets\arrow_right2.png" />
+    <Content Include="css\revolution-slider\assets\boxed_bgtile.png" />
+    <Content Include="css\revolution-slider\assets\bullet.png" />
+    <Content Include="css\revolution-slider\assets\bullets.png" />
+    <Content Include="css\revolution-slider\assets\bullets2.png" />
+    <Content Include="css\revolution-slider\assets\bullet_boxed.png" />
+    <Content Include="css\revolution-slider\assets\coloredbg.png" />
+    <Content Include="css\revolution-slider\assets\gridtile.png" />
+    <Content Include="css\revolution-slider\assets\gridtile_3x3.png" />
+    <Content Include="css\revolution-slider\assets\gridtile_3x3_white.png" />
+    <Content Include="css\revolution-slider\assets\gridtile_white.png" />
+    <Content Include="css\revolution-slider\assets\large_left.png" />
+    <Content Include="css\revolution-slider\assets\large_right.png" />
+    <Content Include="css\revolution-slider\assets\loader.gif" />
+    <Content Include="css\revolution-slider\assets\navigdots.png" />
+    <Content Include="css\revolution-slider\assets\navigdots_bgtile.png" />
+    <Content Include="css\revolution-slider\assets\shadow1.png" />
+    <Content Include="css\revolution-slider\assets\shadow2.png" />
+    <Content Include="css\revolution-slider\assets\shadow3.png" />
+    <Content Include="css\revolution-slider\assets\small_left.png" />
+    <Content Include="css\revolution-slider\assets\small_left_boxed.png" />
+    <Content Include="css\revolution-slider\assets\small_right.png" />
+    <Content Include="css\revolution-slider\assets\small_right_boxed.png" />
+    <Content Include="css\revolution-slider\assets\timer.png" />
+    <Content Include="css\revolution-slider\css\extralayers.css" />
+    <Content Include="css\revolution-slider\css\settings.css" />
+    <Content Include="css\revolution-slider\font\revicons90c6.svg" />
+    <Content Include="css\revolution-slider\images\gradient\g30.png" />
+    <Content Include="css\revolution-slider\images\gradient\g40.png" />
+    <Content Include="css\spectrum.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\superfish.css" />
+    <Content Include="css\switcher.css" />
+    <Content Include="css\team-member.css" />
+    <Content Include="css\theme-responsive.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="img\about-2.jpg" />
+    <Content Include="img\about.jpg" />
+    <Content Include="img\ads-small.jpg" />
+    <Content Include="img\bg_off.png" />
+    <Content Include="img\blog\01.jpg" />
+    <Content Include="img\blog\02.jpg" />
+    <Content Include="img\blog\03.jpg" />
+    <Content Include="img\blog\04.jpg" />
+    <Content Include="img\blog\blog-post1.jpg" />
+    <Content Include="img\blog\blog-post2.jpg" />
+    <Content Include="img\blog\blog-post3.jpg" />
+    <Content Include="img\check.png" />
+    <Content Include="img\clientslogo\01.png" />
+    <Content Include="img\clientslogo\02.png" />
+    <Content Include="img\clientslogo\03.png" />
+    <Content Include="img\clientslogo\04.png" />
+    <Content Include="img\coming-soon-bg.jpg" />
+    <Content Include="img\contact-map.png" />
+    <Content Include="img\content\product-1.jpg" />
+    <Content Include="img\content\product-2.jpg" />
+    <Content Include="img\dummy.png" />
+    <Content Include="img\ft-bg.jpg" />
+    <Content Include="img\gallery\img1.jpg" />
+    <Content Include="img\gallery\img2.jpg" />
+    <Content Include="img\gallery\img3.jpg" />
+    <Content Include="img\gallery\img4.jpg" />
+    <Content Include="img\gallery\img5.jpg" />
+    <Content Include="img\gallery\thumbs\img1.jpg" />
+    <Content Include="img\gallery\thumbs\img2.jpg" />
+    <Content Include="img\gallery\thumbs\img3.jpg" />
+    <Content Include="img\gallery\thumbs\img4.jpg" />
+    <Content Include="img\gallery\thumbs\img5.jpg" />
+    <Content Include="img\icons\corporate-solutions.png" />
+    <Content Include="img\icons\email-marketing.png" />
+    <Content Include="img\icons\web-design.png" />
+    <Content Include="img\ico\apple-touch-icon-114.png" />
+    <Content Include="img\ico\apple-touch-icon-144.png" />
+    <Content Include="img\ico\apple-touch-icon-72.png" />
+    <Content Include="img\ico\apple-touch-icon.png" />
+    <Content Include="img\ico\favicon.ico" />
+    <Content Include="img\iphone5c.png" />
+    <Content Include="img\loader.gif" />
+    <Content Include="img\logos\logo_green.png" />
+    <Content Include="img\pattern-3.png" />
+    <Content Include="img\pattern.jpg" />
+    <Content Include="img\patterns\dark_wood.png" />
+    <Content Include="img\patterns\denim.png" />
+    <Content Include="img\patterns\fabrics_gray.png" />
+    <Content Include="img\patterns\grey_wash.png" />
+    <Content Include="img\patterns\lghtmesh.png" />
+    <Content Include="img\patterns\retina_wood.png" />
+    <Content Include="img\patterns\subtle_grunge.png" />
+    <Content Include="img\patterns\tileable_wood.png" />
+    <Content Include="img\patterns\wall.png" />
+    <Content Include="img\patterns\whitey.png" />
+    <Content Include="img\portfolio\01.jpg" />
+    <Content Include="img\portfolio\02.jpg" />
+    <Content Include="img\portfolio\03.jpg" />
+    <Content Include="img\portfolio\04.jpg" />
+    <Content Include="img\portfolio\05.jpg" />
+    <Content Include="img\portfolio\06.jpg" />
+    <Content Include="img\portfolio\07.jpg" />
+    <Content Include="img\portfolio\08.jpg" />
+    <Content Include="img\portfolio\09.jpg" />
+    <Content Include="img\portfolio\10.jpg" />
+    <Content Include="img\portfolio\11.jpg" />
+    <Content Include="img\portfolio\12.jpg" />
+    <Content Include="img\portfolio\single-portfolio-image.jpg" />
+    <Content Include="img\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="img\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="img\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="img\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="img\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="img\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="img\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="img\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="img\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="img\prettyPhoto\default\default_thumb.png" />
+    <Content Include="img\prettyPhoto\default\loader.gif" />
+    <Content Include="img\prettyPhoto\default\sprite.png" />
+    <Content Include="img\prettyPhoto\default\sprite_next.png" />
+    <Content Include="img\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="img\prettyPhoto\default\sprite_x.png" />
+    <Content Include="img\prettyPhoto\default\sprite_y.png" />
+    <Content Include="img\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="img\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="img\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="img\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="img\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="img\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="img\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="img\prettyPhoto\facebook\loader.gif" />
+    <Content Include="img\prettyPhoto\facebook\sprite.png" />
+    <Content Include="img\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="img\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="img\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="img\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="img\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="img\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="img\prettyPhoto\light_square\sprite.png" />
+    <Content Include="img\px1.jpg" />
+    <Content Include="img\px2.jpg" />
+    <Content Include="img\px3.jpg" />
+    <Content Include="img\recent-post-img.jpg" />
+    <Content Include="img\redbg_big.png" />
+    <Content Include="img\search-icon.html" />
+    <Content Include="img\shop\currency.png" />
+    <Content Include="img\shop\flags\Bangladesh.png" />
+    <Content Include="img\shop\flags\France.png" />
+    <Content Include="img\shop\flags\Germany.png" />
+    <Content Include="img\shop\flags\USA.png" />
+    <Content Include="img\shop\products\large\product-01.jpg" />
+    <Content Include="img\shop\products\medium\product-01.jpg" />
+    <Content Include="img\shop\products\medium\product-02.jpg" />
+    <Content Include="img\shop\products\medium\product-03.jpg" />
+    <Content Include="img\shop\products\medium\product-04.jpg" />
+    <Content Include="img\shop\products\thumbnail\product-01.jpg" />
+    <Content Include="img\shop\products\thumbnail\product-02.jpg" />
+    <Content Include="img\shop\products\thumbnail\product-03.jpg" />
+    <Content Include="img\shop\products\thumbnail\product-04.jpg" />
+    <Content Include="img\shop\product_01.jpg" />
+    <Content Include="img\shop\product_02.jpg" />
+    <Content Include="img\shop\product_03.jpg" />
+    <Content Include="img\shop\product_04.jpg" />
+    <Content Include="img\shop\product_05.jpg" />
+    <Content Include="img\shop\product_06.jpg" />
+    <Content Include="img\shop\product_07.jpg" />
+    <Content Include="img\shop\product_08.jpg" />
+    <Content Include="img\shop\product_09.jpg" />
+    <Content Include="img\shop\product_10.jpg" />
+    <Content Include="img\shop\stars-2.png" />
+    <Content Include="img\shop\stars-3.png" />
+    <Content Include="img\shop\stars-4.png" />
+    <Content Include="img\shop\stars-5.png" />
+    <Content Include="img\slider\responsive-imac.png" />
+    <Content Include="img\slider\responsive-ipad.png" />
+    <Content Include="img\slider\responsive-iphone.png" />
+    <Content Include="img\slider\slider-bg-2.jpg" />
+    <Content Include="img\team\team-member-1.jpg" />
+    <Content Include="img\team\team-member-2.jpg" />
+    <Content Include="img\team\team-member-3.jpg" />
+    <Content Include="img\team\team-member-4.jpg" />
+    <Content Include="img\testimonial\team-member-1.jpg" />
+    <Content Include="img\testimonial\team-member-2.jpg" />
+    <Content Include="img\testimonial\team-member-3.jpg" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\coming-soon.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\fappear.js" />
+    <Content Include="js\imagesloaded.pkgd.min.js" />
+    <Content Include="js\jflickrfeed.js" />
+    <Content Include="js\jquery-migrate-1.0.0.js" />
+    <Content Include="js\jquery-ui.js" />
+    <Content Include="js\jquery.bxslider.min.js" />
+    <Content Include="js\jquery.countdown.js" />
+    <Content Include="js\jquery.countTo.js" />
+    <Content Include="js\jquery.fitvids.js" />
+    <Content Include="js\jquery.gmap.min.js" />
+    <Content Include="js\jquery.isotope.js" />
+    <Content Include="js\jquery.knob.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.parallax.js" />
+    <Content Include="js\jquery.prettyPhoto.js" />
+    <Content Include="js\jquery.sticky.js" />
+    <Content Include="js\jquery.wait.js" />
+    <Content Include="js\modernizr-2.6.2.min.js" />
+    <Content Include="js\portfolio.js" />
+    <Content Include="js\product.js" />
+    <Content Include="js\revolution-slider\js\jquery.themepunch.plugins.min.js" />
+    <Content Include="js\revolution-slider\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="js\simpleGallery\jquery.simpleGallery.js" />
+    <Content Include="js\simpleGallery\jquery.simpleLens.js" />
+    <Content Include="js\spectrum.js" />
+    <Content Include="js\superfish.js" />
+    <Content Include="js\switcher.js" />
+    <Content Include="js\tweetMachine.js" />
+    <Content Include="js\tytabs.js" />
+    <Content Include="js\waypoints.min.js" />
+    <Content Include="js\wow.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Authenticate.aspx.cs">
+      <DependentUpon>Authenticate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Authenticate.aspx.designer.cs">
+      <DependentUpon>Authenticate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Forgot_Password.aspx.cs">
+      <DependentUpon>Forgot_Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forgot_Password.aspx.designer.cs">
+      <DependentUpon>Forgot_Password.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup>

@@ -1,0 +1,293 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="Ayminddac.Default1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <title>Aymin DDAC</title>
+    <meta name="description" content="DDAC">
+    <meta name="author" content="Aymin">
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,700,800,900' rel='stylesheet' type='text/css'>
+    <!-- Library CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/animations.css" media="screen">
+    <link rel="stylesheet" href="css/superfish.css" media="screen">
+    <link rel="stylesheet" href="css/revolution-slider/css/settings.css" media="screen">
+    <link rel="stylesheet" href="css/revolution-slider/css/extralayers.css" media="screen">
+    <link rel="stylesheet" href="css/prettyPhoto.css" media="screen">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Skin -->
+    <link rel="stylesheet" href="css/colors/green.css" class="colors">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/theme-responsive.css">
+    <!-- Switcher CSS -->
+    <link href="css/switcher.css" rel="stylesheet">
+    <link href="css/spectrum.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="img/ico/favicon.ico">
+    <link rel="apple-touch-icon" href="img/ico/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/ico/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/ico/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/ico/apple-touch-icon-144.png">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="home">
+    <div class="page-mask">
+        <div class="page-loader">
+            <div class="spinner"></div>
+            Loading...
+        </div>
+    </div>
+    <div class="wrap">
+        <header id="header">
+            <!-- Header Top Bar -->
+            <div class="top-bar">
+                <div class="slidedown collapse">
+                    <div class="container">
+                        <div class="pull-left">
+                            <ul class="social pull-left">
+                                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li class="dribbble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li class="rss"><a href="#"><i class="fa fa-rss"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="phone-login pull-right">
+                            <a><i class="fa fa-phone"></i>Call Us : +60 123-123-123</a>
+                            <a href="#" data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in"></i>Login</a>
+                            <a href="#" data-toggle="modal" data-target="#registrationModal"><i class="fa fa-edit"></i>Registration</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Header Top Bar -->
+            <!-- Main Header -->
+            <div class="main-header">
+                <div class="container">
+                    <!-- TopNav -->
+                    <div class="topnav navbar-header">
+                        <a class="navbar-toggle down-button" data-toggle="collapse" data-target=".slidedown">
+                            <i class="fa fa-angle-down icon-current"></i>
+                        </a>
+                    </div>
+                    <!-- /TopNav-->
+                    <!-- Logo -->
+                    <div class="logo pull-left" style="margin-top:7px;">
+                        <h1>
+                            <a href="Default.aspx">
+                                DDAC
+                            </a>
+                        </h1>
+                    </div>
+                    <!-- /Logo -->
+                    <!-- Mobile Menu -->
+                    <div class="mobile navbar-header">
+                        <a class="navbar-toggle" data-toggle="collapse" href=".html">
+                            <i class="fa fa-bars fa-2x"></i>
+                        </a>
+                    </div>
+                    <!-- /Mobile Menu -->
+                    <!-- Menu Start -->
+                    <nav class="collapse navbar-collapse menu">
+                        <ul class="nav navbar-nav sf-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Add Shipping</a></li>
+                        </ul>
+                    </nav>
+                    <!-- /Menu -->
+                </div>
+            </div>
+            <!-- /Main Header -->
+        </header>
+        
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        
+        <footer id="footer">
+            <div class="pattern-overlay">
+                <div class="footer-top">
+                        <div class="container">
+                            <div class="row">
+                                <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-one">
+                                    <h3 class="light">About</h3>
+                                    <p> 
+                                        Aymin Ahmed Alvi Asia Pacific University Student
+                                    </p>
+                                </section>
+                                <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-three">
+                                    <h3 class="light">Contact Us</h3>
+                                    <ul class="contact-us">
+                                        <li>
+                                            <i class="fa fa-map-marker"></i>
+                                            <p> 
+                                                <strong class="contact-pad">Address:</strong> House: 1, Road: 2,<br> South City <br>
+                                                Bukit Jalil, Malaysia 
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-phone"></i>
+                                            <p><strong>Phone:</strong> +60 123-123-123</p>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-envelope"></i>
+                                            <p><strong>Email:</strong><a href="mailto:aymin@aymin.com">aymin@aymin.com</a></p>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 ">
+                                <p class="credits">&copy; Copyright 2018 by Aymin Ahmed Alvi. All Rights Reserved. </p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 ">
+                                <ul class="social social-icons-footer-bottom">
+                                    <li class="facebook"><a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="twitter"><a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="dribbble"><a href="#" data-toggle="tooltip" title="Dribble"><i class="fa fa-dribbble"></i></a></li>
+                                    <li class="linkedin"><a href="#" data-toggle="tooltip" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="rss"><a href="#" data-toggle="tooltip" title="Rss"><i class="fa fa-rss"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Footer Bottom -->
+                <!-- /Footer Bottom -->
+            </div>
+        </footer>
+        <section id="modals">
+        <!-- Login Modal -->
+        <div class="modal login fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="form-signin-heading modal-title" id="myModalLabel">Login</h2>
+                    </div>
+                    <form method="post" id="login">
+                        <div class="modal-body">
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <input class="form-control" id="username" name="email" type="email" placeholder="Email" value="" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <input class="form-control" type="password" id="pass" name="password" placeholder="Password" value="" required>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="Forgot_password.aspx" class="pull-left">(Lost Password?)</a>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-color">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /Logan Modal -->
+        <!-- Registration Modal -->
+        <div class="modal register fade" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="registrationModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="form-signin-heading modal-title" id="registrationModalLabel">Create a new account</h2>
+                    </div>
+                    <form method="post" id="registration">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                        <input type="text" value="" class="form-control" placeholder="Name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" value="" class="form-control" placeholder="Company Name" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <input type="email" value="" class="form-control" placeholder="E-mail Address" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <input type="password" value="" class="form-control" placeholder="Password" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                        <input type="text" value="" class="form-control" placeholder="Contact" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" value="" class="form-control" placeholder="Person In Charge" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-color">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /Registration Modal -->
+    </section>
+        <!-- Scroll To Top -->
+        <a href="#" class="scrollup"><i class="fa fa-angle-up"></i></a>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-1.0.0.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/revolution-slider/js/jquery.themepunch.plugins.min.js"></script>
+    <script src="js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script src="js/jquery.wait.js"></script>
+    <script src="js/fappear.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/tweetMachine.js"></script>
+    <script src="js/tytabs.js"></script>
+    <script src="js/jquery.gmap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/jflickrfeed.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/spectrum.js"></script>
+    <script src="js/switcher.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
