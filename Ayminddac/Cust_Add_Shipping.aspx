@@ -41,7 +41,7 @@
                                 </a>
                                 <div id="step-1">
                                     <div class="step-content">
-                                        <form class="row no-margin">
+                                        <form class="row no-margin" method="post" action="Cust_Add_Shipping.aspx?add=true">
                                             <div class="col-sm-6 col-md-6">
                                                 <label for="mondayTime">Departure Port</label>
                                                 <select name="depport" onchange="checkcost();checkduration();" id="depport" class="form-control" required>
@@ -81,17 +81,17 @@
                                                 <textarea name="details" class="form-control" required></textarea>
                                             </div>
                                             <div class="col-sm-6 col-md-6">
-                                                <label for="saturdayTime">Estimate Duration</label>
+                                                <label for="saturdayTime">Estimate Duration (day)</label>
                                                 <input type="text" class="form-control" id="duration" name="duration" required readonly>
                                             </div>
                                             <div class="clearfix"></div>
                                             <div class="col-sm-6 col-md-6">
-                                                <label for="wednesdayTime">Estimate Cost</label>
+                                                <label for="wednesdayTime">Estimate Cost (MYR)</label>
                                                 <input type="text" class="form-control" id="cost" name="cost" required readonly>
                                             </div>
                                             <div class="clearfix"></div>
                                             <div class="col-sm-12 buttons-box text-right">
-                                                <button type="button" class="btn btn-color">Add</button>
+                                                <button type="submit" class="btn btn-color">Add</button>
                                                 <span class="required"><b>*</b> All Fields Required</span>
                                             </div>
                                         </form>

@@ -10,13 +10,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
-                            <h2 class="title">Add Shipping</h2>
+                            <h2 class="title">Edit Shipping</h2>
                         </div>
                         <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
                             <div class="breadcrumbs pull-right">
                                 <ul>
                                     <li>You are Now on:</li>
-                                    <li>Add Shipping</li>
+                                    <li>Edit Shipping</li>
                                 </ul>
                             </div>
                         </div>
@@ -37,11 +37,11 @@
                             <li class="panel">
                                 <a href="#" class="collapsed step-title">
 
-                                    <h6>Add new Shipping</h6>
+                                    <h6>Edit current Shipping</h6>
                                 </a>
                                 <div id="step-1">
                                     <div class="step-content">
-                                        <form class="row no-margin">
+                                        <form class="row no-margin" method="post" action="Staff_Edit_Shipping.aspx?add=true&edit=<%=sdr["ShID"] %>&curport=<%=currentportid %>&shipdepport=<%=sdr["Dep_PID"] %>">
                                             <div class="col-sm-6 col-md-6">
                                                 <label for="mondayTime">Departure Port</label>
                                                 <input type="text" class="form-control" value="<%=sdr["depport"] %>" name="depport" required readonly>
