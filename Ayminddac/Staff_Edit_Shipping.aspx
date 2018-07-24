@@ -4,6 +4,8 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <%while (sdr.Read())
+        { %>
     <section id="main">
         <div class="breadcrumb-wrapper">
             <div class="pattern-overlay">
@@ -138,14 +140,14 @@
                                                     <%} %>
                                                 </select>
                                                 <%}
-                                                else
-                                                { %>
+                                                    else
+                                                    { %>
                                                 <%if (sdr["Status"].ToString() == "Arriving" || sdr["Status"].ToString() == "Received")
                                                     { %>
                                                 <input type="text" class="form-control" value="<%=sdr["Container_ID"] %>" name="conid" required readonly>
                                                 <%}
-                                                else
-                                                { %>
+                                                    else
+                                                    { %>
                                                 <input type="text" class="form-control" value="waiting for approval" disabled>
                                                 <%} %>
                                                 <%} %>
@@ -157,7 +159,7 @@
                                             </div>
                                             <div class="clearfix"></div>
                                             <div class="col-sm-12 buttons-box text-right">
-                                                <button type="button" class="btn btn-color">Edit</button>
+                                                <button type="submit" class="btn btn-color">Edit</button>
 
                                             </div>
                                         </form>
@@ -179,4 +181,5 @@
         </div>
         <!-- /Main Content -->
     </section>
+    <%} %>
 </asp:Content>

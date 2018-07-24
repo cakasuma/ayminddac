@@ -80,7 +80,7 @@
                                             <label for="wednesdayTime">Status</label>
                                             <input type="text" class="form-control" value="<%=sdr["Status"] %>" name="status" required readonly>
                                         </div>
-
+                                        <div class="clearfix"></div>
                                     </div>
                                 </div>
                             </li>

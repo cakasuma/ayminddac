@@ -110,20 +110,19 @@
                                 {
 
                             %>
-                            <li><a href="Default.aspx">home </a></li>
+                            <li><a href="Default.aspx">Home </a></li>
                             <%}
                                 else
                                 { %>
                             <%if (userrole == "Customer")
                                 { %>
-                            <li><a href="Cust_Home.aspx">home </a></li>
+                            <li><a href="Cust_Home.aspx">Home </a></li>
                             <li><a href="Cust_Add_Shipping.aspx">Add Shipping </a></li>
                             <%} %>
                             <%if (userrole == "Staff")
                                 { %>
-                            <li><a href="Staff_Home.aspx">home </a></li>
+                            <li><a href="Staff_Home.aspx">Home </a></li>
                             <%} %>
-                            <li><a href="Profile.aspx">profile </a></li>
                             <%} %>
                         </ul>
                     </nav>

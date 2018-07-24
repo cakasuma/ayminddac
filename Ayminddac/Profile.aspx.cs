@@ -13,13 +13,21 @@ namespace Ayminddac
         public SqlDataReader sdr;
         protected void Page_Load(object sender, EventArgs e)
         {
-            string email = Session["Email"].ToString();
-            string uid = helper.getUserId(email);
-            String query = $"SELECT u.*, c.* From Customers c inner join Users u ON c.SID=u.UID WHERE CID={uid}";
-            SqlConnection conn = helper.getConnection();
-            conn.Open();
-            SqlCommand cm = new SqlCommand(query, conn);
-            sdr = cm.ExecuteReader();
+            if (Session["Email"] != null)
+            {
+                string email = Session["Email"].ToString();
+                string uid = helper.getUserId(email);
+                String query = $"SELECT u.*, c.* From Customers c inner join Users u ON c.CID=u.UID WHERE CID={uid}";
+                SqlConnection conn = helper.getConnection();
+                conn.Open();
+                SqlCommand cm = new SqlCommand(query, conn);
+                sdr = cm.ExecuteReader();
+            }
+            else
+            {
+                Response.Redirect("Default.aspx");
+            }
+            
         }
     }
 }
